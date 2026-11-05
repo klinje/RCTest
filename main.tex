@@ -15,3 +15,7 @@ C: `git pull --rebase` ist, wie der Name schon sagt, auch eine Möglichkeit, um 
 WICHTIG: bei `gh pr merge 1` muss man DIREKT danach `git pull` machen, sonst hat man die Änderungen nicht lokal und kann nicht weiterarbeiten.
 
 R: um im lokalen repo zu checkn ob es remote änderungen gab muss zuerst `git fetch` ausgeführt werden. dann kann mit `git status` nachgeschaut werden, ob es commits gibt, die gepullt werden können/müssen.
+
+C: Autofetch: über Cmd + Shift + P -> User Preferences und dann über git.autofetch auf true setzen. Dann wird automatisch alle 3 Minuten ein fetch gemacht. Man kann auch die Period ändern.
+
+C: Wenn beide zeitgleich an einer Datei gearbeitet haben, und zB Renas gepusht hat, dann muss ich meine Änderungen stashen, dann pullen, dann über den Merge-Editor in VSCode die Änderungen zusammenführen und dann committen. Danach kann ich pushen (nach add und commit).
